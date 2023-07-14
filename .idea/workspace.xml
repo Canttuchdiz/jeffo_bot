@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55dc95e2-f9cc-4490-84f5-b914e7341e42" name="Changes" comment="" />
+    <list default="true" id="55dc95e2-f9cc-4490-84f5-b914e7341e42" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jeffo_bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jeffo_bot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +43,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -49,7 +54,7 @@
   </component>
   <component name="RunManager">
     <configuration name="jeffo" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="mod_bot" />
+      <module name="jeffo_bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -91,7 +96,7 @@
       <workItem from="1689301802842" duration="5274000" />
       <workItem from="1689307800862" duration="1143000" />
       <workItem from="1689308993798" duration="460000" />
-      <workItem from="1689348918987" duration="45000" />
+      <workItem from="1689348918987" duration="658000" />
     </task>
     <servers />
   </component>
@@ -103,7 +108,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mod_bot$__main__.coverage" NAME="lily Coverage Results" MODIFIED="1689003964810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lily" />
-    <SUITE FILE_PATH="coverage/jeffo_bot$__main__.coverage" NAME="jeffo Coverage Results" MODIFIED="1689274093683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jeffo" />
+    <SUITE FILE_PATH="coverage/jeffo_bot$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1689349565991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jeffo" />
     <SUITE FILE_PATH="coverage/jeffo_bot$jeffo.coverage" NAME="jeffo Coverage Results" MODIFIED="1689305083279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jeffo" />
   </component>
 </project>
