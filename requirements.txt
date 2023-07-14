@@ -4,5 +4,4 @@ python-dateutil
 parsedatetime
 typing-extensions
 asyncpg
-prisma
 aiofiles
