@@ -11,7 +11,7 @@ MY_DIR = Path(__file__).parent
 
 load_dotenv()
 
-TOKEN: str = os.getenv("token")
+TOKEN: str = str(os.environ["TOKEN"])
 
 intents = discord.Intents.default()
 intents.members = True
