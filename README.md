@@ -1,6 +1,6 @@
-# Lily Bot
+# Jeffo Bot
 
-Lily Bot is a Discord Bot dedicated to moderation.
+Jeffo Bot is a Discord Bot dedicated to activities within Jeffo's [server](discord.gg/jeffo).
 
 ## Installation
 
@@ -26,8 +26,7 @@ docker system prune -a
 
 ## Usage
 
-The built in ``/ban``, ``/kick``, and ``/timeout`` are logged as an infraction,
-as well as the bot's ``/warn``. The list of commands show up when you do ``/``.
+W.I.P
 
 ## Notes
 
