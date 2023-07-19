@@ -1,4 +1,4 @@
 
 class Config:
 
-    ACTIVITY = "Moderation"
+    ACTIVITY = "The Fruit Loops"
