@@ -1,7 +1,9 @@
 import asyncio
 import discord
+from discord import Message
 from discord import Member, User, Guild, AuditLogEntry
 from discord.ext import commands
+from jeffo.utils.constants import _BannedPhrases
 from typing import Union
 import itertools
 import traceback
@@ -22,6 +24,12 @@ class Events(commands.Cog):
         print('Logged in as ---->', self.client.user)
         print('ID:', self.client.user.id)
         # print(f'Version: {Config.VERSION}')
+
+    @commands.Cog.listener()
+    async def on_message(self, message: Message) -> None:
+        for phrase in _BannedPhrases.phrases:
+            if phrase in message.content.lower():
+                await message.author.ban(reason=f"Sent message containing banned phrase: {phrase}")
 
     @commands.Cog.listener()
     async def on_command_error(self, ctx, error) -> None:

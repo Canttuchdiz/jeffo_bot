@@ -33,6 +33,11 @@ class _CharList:
 
     ]
 
+
+class _BannedPhrases:
+    phrases = ["fruit notifer for 2 leopard"]
+
+
 class _GuildInfo:
     GUILD_ID = 956379889601228870
     ROLE_ID = 1129242313303015484

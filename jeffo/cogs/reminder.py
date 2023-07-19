@@ -23,7 +23,6 @@ class Reminder(Cog):
         await self.state_manager.set_state()
         await asyncio.sleep(1800)
 
-        # Send message
 
     @command(name="start")
     async def start(self, ctx: Context) -> None:
