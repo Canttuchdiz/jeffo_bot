@@ -10,7 +10,6 @@ import datetime
 
 
 class Reminder(Cog):
-
     times = DatetimeGenerator.generate_range()
 
     def __init__(self, bot: Bot) -> None:
@@ -21,8 +20,9 @@ class Reminder(Cog):
     async def bot_update(self) -> None:
         general = self.client.get_channel(_GuildInfo.GEN_ID)
         await self.state_manager.set_state()
+        await general.send("Change set :)")
         await asyncio.sleep(1800)
-
+        await general.send("Lounge remind :)")
 
     @command(name="start")
     async def start(self, ctx: Context) -> None:

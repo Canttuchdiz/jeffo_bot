@@ -102,3 +102,7 @@ def tick(opt: Optional[bool], /) -> str:
         None: '<:greyTick:563231201280917524>',
     }
     return lookup.get(opt, '<:redTick:330090723011592193>')
+
+
+class Logging:
+    pass
