@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55dc95e2-f9cc-4490-84f5-b914e7341e42" name="Changes" comment="Update: Changed status to watching the fruit loops">
+    <list default="true" id="55dc95e2-f9cc-4490-84f5-b914e7341e42" name="Changes" comment="Added logging class and debugging messages.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jeffo/cogs/reminder.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeffo/cogs/reminder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jeffo/utils/formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeffo/utils/formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeffo/models/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeffo/models/state.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeffo/utils/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeffo/utils/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jeffo/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/jeffo/utils/constants.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,10 @@
       <workItem from="1689802184331" duration="2119000" />
       <workItem from="1689806911404" duration="359000" />
       <workItem from="1689809617621" duration="1028000" />
-      <workItem from="1689813208031" duration="137000" />
+      <workItem from="1689813208031" duration="170000" />
+      <workItem from="1689817089819" duration="6000" />
+      <workItem from="1689817665360" duration="2779000" />
+      <workItem from="1689824426623" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Setup+">
       <created>1689349603758</created>
@@ -153,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689807129674</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added logging class and debugging messages.">
+      <created>1689813368378</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689813368378</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,11 +183,12 @@
     <MESSAGE value="Trim time+" />
     <MESSAGE value="Update: Added banning on banned phrase." />
     <MESSAGE value="Update: Changed status to watching the fruit loops" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Changed status to watching the fruit loops" />
+    <MESSAGE value="Added logging class and debugging messages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added logging class and debugging messages." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mod_bot$__main__.coverage" NAME="lily Coverage Results" MODIFIED="1689003964810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lily" />
     <SUITE FILE_PATH="coverage/jeffo_bot$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1689349565991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jeffo" />
-    <SUITE FILE_PATH="coverage/jeffo_bot$jeffo.coverage" NAME="jeffo Coverage Results" MODIFIED="1689810023846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jeffo" />
+    <SUITE FILE_PATH="coverage/jeffo_bot$jeffo.coverage" NAME="jeffo Coverage Results" MODIFIED="1689818697193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jeffo" />
   </component>
 </project>

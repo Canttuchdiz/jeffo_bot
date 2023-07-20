@@ -1,8 +1,9 @@
 from __future__ import annotations
 import asyncio
+from discord import TextChannel
 from discord.ext import tasks
-from discord.ext.commands import Bot, Cog, command, Context
-from jeffo.utils.constants import _CharList, _GuildInfo
+from discord.ext.commands import Bot, Cog, command, Context, has_permissions
+from jeffo.utils.constants import _CharList
 from jeffo.utils.time import DatetimeGenerator
 from jeffo.models.state import State, StateManager
 from typing import List
@@ -17,17 +18,15 @@ class Reminder(Cog):
         self.state_manager = StateManager(self.client, State.JEFFO)
 
     @tasks.loop(time=times)
-    async def bot_update(self) -> None:
-        general = self.client.get_channel(_GuildInfo.GEN_ID)
+    async def bot_update(self, channel: TextChannel) -> None:
         await self.state_manager.set_state()
-        await general.send("Change set :)")
         await asyncio.sleep(1800)
-        await general.send("Lounge remind :)")
 
     @command(name="start")
+    @has_permissions(administrator=True)
     async def start(self, ctx: Context) -> None:
         await ctx.send("Started!")
-        self.bot_update.start()
+        self.bot_update.start(ctx.channel)
 
 
 async def setup(bot):

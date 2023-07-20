@@ -2,3 +2,5 @@
 class Config:
 
     ACTIVITY = "The Fruit Loops"
+    ROLE_ID = 1131365644386979862
+    GUILD_ID = 952270902668709908

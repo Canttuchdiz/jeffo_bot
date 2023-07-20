@@ -1,7 +1,8 @@
 from discord import Color
 from discord.ext.commands import Bot
 from discord.types.snowflake import Snowflake
-from jeffo.utils.constants import _CharList, _GuildInfo
+from jeffo.utils.constants import _CharList
+from jeffo.utils.config import Config
 from enum import Enum
 import string
 
@@ -35,7 +36,7 @@ class StateManager:
         return state
 
     async def _apply_state(self) -> string:
-        role = self.client.get_guild(_GuildInfo.GUILD_ID).get_role(_GuildInfo.ROLE_ID)
+        role = self.client.get_guild(Config.GUILD_ID).get_role(Config.ROLE_ID)
         character = _CharList.characters[self.state.value]
         username = string.capwords(character.replace('_', ' '))
         avatarUrl = 'assets/' + character + '.png'
