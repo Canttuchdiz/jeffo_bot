@@ -4,6 +4,8 @@ from discord import Message
 from discord import Member, User, Guild, AuditLogEntry
 from discord.ext import commands
 from jeffo.utils.constants import _BannedPhrases
+from jeffo.utils.config import Config
+from jeffo.utils.formats import Logging
 from typing import Union
 import itertools
 import traceback
@@ -29,7 +31,11 @@ class Events(commands.Cog):
     async def on_message(self, message: Message) -> None:
         for phrase in _BannedPhrases.phrases:
             if phrase in message.content.lower():
-                await message.author.ban(reason=f"Sent message containing banned phrase: {phrase}")
+                logging_channel = self.client.get_channel(Config.LOGS_ID)
+                reason = f"Sent message containing banned phrase"
+                embed = Logging.ban_log(message.author, reason)
+                await logging_channel.send(embed=embed)
+                await message.author.ban(reason=reason)
 
     @commands.Cog.listener()
     async def on_command_error(self, ctx, error) -> None:
